@@ -9,8 +9,13 @@ namespace ConsoleApp1//geçerli olan projenin isim uzayı
         {
             //Defines(); 
 
-            int result = Add(15, 30);
-            WriteToScreen("Sonuç=" + result.ToString());
+            //int result = Add(15, 30);
+            //WriteToScreen("Sonuç=" + result.ToString());
+
+            int s1 = 20, s2 = 10;
+            MyCalculator myCalculator = new MyCalculator();
+            myCalculator.Calculate(s1, s2);
+            myCalculator.Calculate(200, 100);
 
             Console.ReadKey();
         }
@@ -58,5 +63,6 @@ namespace ConsoleApp1//geçerli olan projenin isim uzayı
         {
             return n1 + n2;
         }//geri dönüşü olan metot
+
     }
 }
