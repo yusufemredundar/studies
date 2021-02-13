@@ -7,6 +7,15 @@ namespace ConsoleApp1//geçerli olan projenin isim uzayı
     {
         static void Main(string[] args)
         {
+            //Defines(); 
+
+            int result = Add(15, 30);
+            WriteToScreen("Sonuç=" + result.ToString());
+
+            Console.ReadKey();
+        }
+        static void Defines()
+        {
             //Değişken tanımlama
             string s1 = "10";
             string s2 = "20";
@@ -38,10 +47,16 @@ namespace ConsoleApp1//geçerli olan projenin isim uzayı
             //for,while,foreach,dowhile
             for (int i = 0; i < numberDynamic.Count; i++)
             {
-                Console.WriteLine("Ekrana yaz="+numberDynamic[i]);
+                Console.WriteLine("Ekrana yaz=" + numberDynamic[i]);
             }
-
-            Console.ReadKey();
-        }
+        }//metot tanımlama
+        static void WriteToScreen(string message)
+        {
+            Console.WriteLine(message);
+        }//geri dönüşü olmayan metot
+        static int Add(int n1, int n2)
+        {
+            return n1 + n2;
+        }//geri dönüşü olan metot
     }
 }
