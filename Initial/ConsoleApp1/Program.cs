@@ -12,10 +12,10 @@ namespace ConsoleApp1//geçerli olan projenin isim uzayı
             //int result = Add(15, 30);
             //WriteToScreen("Sonuç=" + result.ToString());
 
-            int s1 = 20, s2 = 10;
+            //int s1 = 20, s2 = 10;
             MyCalculator myCalculator = new MyCalculator();
-            myCalculator.Calculate(s1, s2);
-            myCalculator.Calculate(200, 100);
+            //myCalculator.BasicCalculate(s1, s2);
+            myCalculator.ComplexCalculate(200, 17);
 
             Console.ReadKey();
         }
